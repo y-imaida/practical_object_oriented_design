@@ -4,6 +4,14 @@ class DiameterDouble
   end
 end
 
+class DiameterDoubleTest < MiniTest::Unit::TestCase
+  include DiameterizableInterfaceTest
+
+  def setup
+    @object = DiameterDouble.new
+  end
+end
+
 class GearTest < MiniTest::Unit::TestCase
   def setup
     @observer = MiniTest::Mock.new
